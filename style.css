@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-size: 100vw 310px;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color:  hsl(257, 40%, 49%);
+}
+
+.nav-picture {
+    margin: 26px 30px;
+    width: 150px;
+    height: 30px;
+}
+
+.mobile-pc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ilustration .ilustration-picture {
+    padding-top: 16px;
+    height: 180px;
+    width: 285px;
+}
+
+.information {
+    /* width: 380px; */
+    margin-top: 15px;
+    color: white;
+}
+
+.information-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    line-height: 31px;
+    margin: 27px 25px 0;
+    font-weight: bold;
+}
+
+.information-paragraph {
+    line-height: 19px;
+    font-size:15.5px;
+    padding: 15px;
+    margin: 0px 25px;
+}
+
+.information-button {
+    color: hsl(257, 40%, 49%);
+    margin-top: 7px;
+    border-radius: 50px;
+    width: 210px;
+    height: 34px;
+    border: none;
+    font-size: 14px;
+    box-shadow: 1px 1px 40px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 40px -11px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 40px -11px rgba(0,0,0,0.75);
+}
+
+.information-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.media_icon {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+.media :hover {
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (min-width: 800px) {
+    body {
+        background-size: 90vw 100vh;
+        background-image: url(./images/bg-desktop.svg);
+    } 
+
+    .mobile-pc {
+        align-items:flex-start;
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+        text-align: left;
+    }
+
+    .ilustration {
+        width: 53vw;
+    }
+
+    .ilustration .ilustration-picture {
+        padding-top: 16px;
+        height: 430px;
+        width: 685px;
+    }
+
+    .information {
+        padding: 40px 0;
+        width: 530px;
+        text-align: left;
+    }
+
+    .information-title {
+        font-weight: normal;
+        margin: 0;
+        font-size: 41px;
+        line-height: 40px;
+    }
+
+    .information-paragraph {
+        font-size: 18.5px;
+        margin: 0;
+        padding: 20px 0 10px;
+    }
+
+    .information-button {
+        width: 150px;
+    }
+
+    .media {
+        padding: 0 50px;
+        justify-content: end;
+    }
+}
